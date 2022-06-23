@@ -9,7 +9,6 @@
 		"devStart": "concurrently \"nodemon app.js\" \"npx tailwindcss -i ./public/assets/css/_style.css -o ./public/assets/css/style.css --watch\""
 	},
 	"keywords": [],
-	"author": "Roshane-Johnson",
 	"license": "ISC",
 	"type": "commonjs",
 	"dependencies": {

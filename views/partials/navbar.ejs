@@ -1,10 +1,20 @@
-<nav class="fixed top-0 w-full">
-	<div class="w-10/12 mx-auto py-5 grid grid-cols-2">
-		<a href="/">ExpressApp</a>
-		<ul class="flex justify-end">
-			<li><a href="/">Home</a></li>
-			<li><a href="/test1">Test1</a></li>
-			<li><a href="/test2">Test2</a></li>
+<div class="navbar bg-primary">
+	<div class="navbar-start">
+	  <div class="dropdown">
+		<label tabindex="0" class="btn btn-ghost btn-circle">
+		  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+		</label>
+		<ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+		  <li><a href="/">Homepage</a></li>
+		  <li><a href="/employees">Employees</a></li>
+		  <li><a>About</a></li>
 		</ul>
+	  </div>
 	</div>
-</nav>
+	<div class="navbar-center">
+	  <a class="btn btn-ghost normal-case text-xl">Payroll Application</a>
+	</div>
+	<div class="navbar-end">
+		<a class="btn">Get started</a>
+	  </div>
+  </div>

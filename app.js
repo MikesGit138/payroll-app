@@ -36,6 +36,7 @@ app.use(
 
 // View Routes
 app.use('/', require('./routes/index'))
+app.use('/', require('./routes/employees'))
 
 // Start express app
 const _app = app.listen(PORT, require('os').hostname(), () => {

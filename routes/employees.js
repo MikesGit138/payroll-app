@@ -11,4 +11,7 @@ router.get('/employees', (req, res) => {
     })
 })
 
+router.get('/employees/edit', (req, res) =>{
+    res.send('edit page')
+})
 module.exports = router

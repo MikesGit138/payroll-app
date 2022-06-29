@@ -1,14 +1,13 @@
 
 <div class="card w-96 bg-neutral text-neutral-content">
     <% employees.forEach( (employee)=> { %>
-
     <div id="grid-ctn" class="card-body">
         <div>
         <div class="card-title"><%= employee.frst_nm +" " + employee.lst_nm%></div>
         <div></div>
         <div><%= employee.dept_type %></div>
         <div class="card-actions justify-end">
-        <button class="btn btn-primary"><a href="/edit/<%= employee.id %> ">Edit</a></button>
+        <a href="/edit/<%= employee.id %> "><button class="btn btn-primary">Edit</button></a>
         </div>
         </div>
     </div>

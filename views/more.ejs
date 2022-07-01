@@ -1,0 +1,30 @@
+<section class="h-screen flex justify-center place-items-center">
+<div class="card w-96 bg-base-100 shadow-xl" data-theme="dark">
+    <div class="card-body">
+    <div class="card-title">
+        <%= employee.frst_nm +" " +employee.lst_nm %>'s Payscale 
+    </div>
+    <div>
+        Department Type: <%= employee.dept_type %>
+    </div>
+    <div>
+        Hours Worked: <%= employee.hrs_worked %> 
+    </div>
+    <div>
+        Sick Days: <%= employee.sick_days %> 
+    </div>
+    <div>
+        Expected Hours for Department: <%= employee.work_hrs %> 
+    </div>
+    <div>
+        Overtime: <%= employee.overtime %> 
+    </div>
+    <div>
+        Pay Rate given the Department: <%= employee.rate %> 
+    </div>
+    <div>
+        Calculated pay for the work week: <%= employee.pay %> 
+    </div>
+    </div>
+</div>
+</section>

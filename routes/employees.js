@@ -14,18 +14,18 @@ router.get('/employees', (req, res) => {
 
 router.get('/employees/edit/:id', (req, res) =>{
     const id = req.params.id
-    let sql = `Select * from payroll.employees where id = ${id}`
+    let sql = `Select * from payroll.payscale where emp_id = ${id}`
     let query = DB.query(sql, (err, result) =>{
         if (err) throw err      
-        res.render('edit', {title: 'Edit Page', employees: result[0] })
+        res.render('edit', {title: 'Edit Page', payscale: result[0] })
     })
 })
 
 router.post('/update', (req, res)=> {
-    const id = req.body.id
-    const fname = req.body.fname
-    const lname = req.body.lname
-    let sql = `Update employees set frst_nm = '${fname}', lst_nm = '${lname}' where id = ${id}`
+    const emp_id = req.body.emp_id
+    const sdays = req.body.sdays
+    const hwork = req.body.hwork
+    let sql = `Update payroll.payscale set sick_days = ${sdays}, hrs_worked = ${hwork} where emp_id = ${emp_id}`
     let query = DB.query(sql, (err, results) =>{
         if (err) throw err
         res.redirect('/employees')

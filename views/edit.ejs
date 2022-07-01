@@ -1,23 +1,21 @@
 <section class="grid h-screen place-items-center">
 <div class="card w-96 text-primary-content" data-theme="dark">
-<form action="/update" method="post" class="p-16 grid gap-5">
-    <%# employees.forEach( (employee) => { %>  
-        <input type="hidden" name="id" value="<%= employees.id %>">
+<form action="/update" method="post" class="p-16 grid gap-5">  
+        <input type="hidden" name="emp_id" value="<%= payscale.emp_id %>">
 
     <div>
-        <label for="fname">First Name</label>
-        <input type="text" name="fname" value="<%= employees.frst_nm %> " class="input input-bordered input-primary w-full max-w-xs">
+        <label for="sdays">Sick Days</label>
+        <input type="number" name="sdays" value="<%= payscale.sick_days %>" class="input input-bordered input-primary w-full max-w-xs">
     </div>
     <div>
-        <label for="lname">Last Name</label>
-        <input type="text" name="lname" value="<%= employees.lst_nm %> " class="input input-bordered input-primary w-full max-w-xs">
+        <label for="hwork">Hours Worked</label>
+        <input type="number" name="hwork" value="<%= payscale.hrs_worked %>" class="input input-bordered input-primary w-full max-w-xs">
     </div>
-    <div>
+    <!-- <div>
         <label for="pay">Week Pay</label>
         <input type="text" name="pay" class="input input-bordered input-primary w-full max-w-xs">
-    </div>
+    </div> -->
     <button class="btn btn-primary" type="submit">Submit</button>
 </form>
-<%# }) %> 
 </div>
 </section>

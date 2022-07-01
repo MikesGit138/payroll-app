@@ -1,5 +1,5 @@
 <section class="h-screen flex justify-center place-items-center">
-<div class="card w-96 bg-base-100 shadow-xl" data-theme="dark">
+<div class="card w-96 bg-primary shadow-xl text-neutral-content">
     <div class="card-body">
     <div class="card-title">
         <%= employee.frst_nm +" " +employee.lst_nm %>'s Payscale 
@@ -20,10 +20,10 @@
         Overtime: <%= employee.overtime %> 
     </div>
     <div>
-        Pay Rate given the Department: <%= employee.rate %> 
+        Pay Rate given the Department: $<%= employee.rate %> per hour
     </div>
     <div>
-        Calculated pay for the work week: <%= employee.pay %> 
+        Calculated pay for the work week: $<%= employee.pay %> 
     </div>
     </div>
 </div>

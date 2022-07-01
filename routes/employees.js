@@ -32,6 +32,20 @@ router.post('/update', (req, res)=> {
     })
 })
 
+router.get('/employees/more/:id', (req, res) => {
+    const id = req.params.id
+    let sql = `select employees.id, employees.frst_nm, employees.lst_nm, dept_type, hrs_worked, work_hrs, sick_days, departments.rate,
+    if( hrs_worked > work_hrs, hrs_worked - work_hrs, 0) as overtime, (departments.rate * hrs_worked) as pay
+    from employees join payscale
+    on employees.id = payscale.emp_id
+    join departments
+    on employees.dept_id = departments.id 
+    where employees.id = ${id}`
+    let query = DB.query(sql, (err, results) =>{
+        if (err) throw err
+        res.render('more', {title: 'More', employee: results[0]})
 
+    })
+})
 
 module.exports = router

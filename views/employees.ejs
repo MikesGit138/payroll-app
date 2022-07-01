@@ -6,6 +6,7 @@
         <div class="card-title"><%= employee.frst_nm +" " + employee.lst_nm%></div>
         <div><%= employee.dept_type %></div>
         <div class="card-actions justify-end">
+        <a href="/employees/more/<%= employee.id %> "><button class="btn btn-neutral">More</button></a>
         <a href="/employees/edit/<%= employee.id %> "><button class="btn btn-primary">Edit</button></a>
         </div>
         </div>

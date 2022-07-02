@@ -1,0 +1,35 @@
+<section class="grid h-screen place-items-center">
+    <div class="card w-96 text-primary-content" data-theme="dark">
+        <div class="card-title px-7 pt-4">
+            Employee Register
+        </div>
+        <form action="/empreg" method="post" class="p-8 grid gap-5">
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" class="input input-bordered input-primary w-full max-w-xs">
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" class="input input-bordered input-primary w-full max-w-xs">
+            </div>
+            <div>
+                <label for="uname">Username</label>
+                <input type="text" name="uname" class="input input-bordered input-primary w-full max-w-xs">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="text" name="password" class="input input-bordered input-primary w-full max-w-xs">
+            </div>
+            <div>
+                <label for="dept">Department ID</label>
+                <select class="select select-primary w-full max-w-xs" name="dept">
+                    <option disabled selected>Choose department below</option>
+                    <option value="11">Operations</option>
+                    <option value="12">Sales and Marketing</option>
+                    <option value="13">Administration</option>
+                    <option value="14">Accounts</option>
+                  </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+</section>

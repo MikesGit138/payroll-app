@@ -1,15 +1,15 @@
 ✅start working on payroll app
 ✅collect number of hours worked
-generate a payroll (employee should see pay info)
+✅generate a payroll (employee should see pay info)
 ✅calculate overtime based on department
 ✅add the correct departments
 
 accounts
-account staff should retrieve salary employee info
+✅account staff should retrieve salary employee info
 ✅add/edit salary info
 
 employees
-login and see their salary information
+✅login and see their salary information
 
 supervisors
 generate a salary summary for the department
